@@ -14,3 +14,14 @@ A few resources to get you started if this is your first Flutter project:
 For help getting started with Flutter development, view the
 [online documentation](https://docs.flutter.dev/), which offers tutorials,
 samples, guidance on mobile development, and a full API reference.
+
+<h3 align = "center"> Light Theme </h3>
+<p align = "center">
+<img src= "https://github.com/Yash-978/adv_flutter_ch1/assets/147479013/bf6fb3d0-4c25-4cc0-bc5d-5beed793b330" width=35%
+height=22% >
+
+<h3 align = "center"> Dark Theme </h3>
+<p align = "center">
+<img src= "https://github.com/Yash-978/adv_flutter_ch1/assets/147479013/00e88697-e055-485b-8785-fad02f60fc9f" width=35%
+height=22% >
+
