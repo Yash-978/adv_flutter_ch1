@@ -36,4 +36,46 @@ height=22% >
 height=22% >
 
 
+## 1 State Management :
+
+Ans -> State management in Dart and Flutter is all about managing the data that the app will render and how it will respond to user input.
+
+## 2 State :
+
+Ans -> State is information that (1) can be read synchronously when the widget is built and (2) might change during the lifetime of the widget.
+
+## 3 SetState :
+
+Ans -> Rebuild the our stateful or stateless widget build method.
+
+## 4 Provider State Management :
+
+Ans -> Provider is a powerful state management solution in Flutter, offering a simple way to manage and share state across your application.
+
+## 5 Provider package :
+
+```
+dependencies:
+  flutter:
+    sdk: flutter
+  provider: ^6.0.0  # Check for the latest version
+```
+
+## 6 ChangeNotifier Class :
+
+Ans -> ChangeNotifier is a simple class included in the Flutter SDK which provides change notification to its listeners.
+
+## 7 ChangeNotifierProvider Widget :
+
+Ans -> ChangeNotifierProvider is the widget that provides an instance of a ChangeNotifier to its descendants.
+
+## 8 Consumer Widget :
+
+Ans -> The Consumer widget has two main purposes: It allows obtaining a value from a provider when we don't have a BuildContext that is a descendant of said provider, and therefore cannot use Provider.
+## 9 Provider Tree :
+
+<div align="center">
+  <img height="550"  src="https://github.com/HirenCodeMaster11/Adv_Flutter_Ch1/assets/148859956/8e9c0268-dfde-4c8b-8e9f-42794af871bc" />
+</div>
+
 
