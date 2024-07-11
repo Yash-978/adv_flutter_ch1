@@ -67,11 +67,19 @@ class Homepage extends StatelessWidget {
                 size: 30,
               ),
               trailing: Switch(
+                value: homeproviderTrue.isLight,
                 onChanged: (value) {
                   homeproviderFalse.changeTheme();
                 },
-                value: homeproviderTrue.isLight,
               ),
+              // Switch(
+              //   onChanged: (value) {
+              //
+              //     homeproviderFalse.changeTheme();
+              //   },
+              //   value: homeproviderTrue.isLight,
+              // ),
+
               title: Text(
                 'Dark Mode',
                 style: TextStyle(fontSize: 20),
