@@ -15,10 +15,14 @@ class MyApp extends StatelessWidget {
   Widget build(BuildContext context) {
     return ChangeNotifierProvider(
       create:  (context) =>  Homeprovider(),
+
       child: MaterialApp(
         debugShowCheckedModeBanner: false,
         // routes: AppRoutes.routes,
         home: Homepage(),
+        theme: ThemeData.light(),
+        darkTheme: ThemeData.dark(),
+        // themeMode:homeproviderTrue.isLight ? ThemeMode.light:ThemeMode.dark,
 
       ),
     );
