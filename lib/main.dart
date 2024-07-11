@@ -1,5 +1,8 @@
+import 'package:adv_flutter_ch1/Screens/HomeScreen/HomePageView/homePage.dart';
 import 'package:flutter/material.dart';
+import 'package:provider/provider.dart';
 
+import 'Screens/HomeScreen/HomeProvider/homeProvider.dart';
 import 'Utils/routes.dart';
 void main()
 {
@@ -10,11 +13,14 @@ class MyApp extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-    return MaterialApp(
-      debugShowCheckedModeBanner: false,
-      routes: AppRoutes.routes,
+    return ChangeNotifierProvider(
+      create:  (context) =>  Homeprovider(),
+      child: MaterialApp(
+        debugShowCheckedModeBanner: false,
+        // routes: AppRoutes.routes,
+        home: Homepage(),
 
-
+      ),
     );
   }
 }

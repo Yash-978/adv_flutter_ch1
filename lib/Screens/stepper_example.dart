@@ -15,65 +15,68 @@ int currentFormStep = 0;
 
 List<Step> getFormSteps1() => [
       Step(
-          state: currentFormStep > 0 ? StepState.complete : StepState.indexed,
-          isActive: currentFormStep >= 0,
-          title: Text('Account', style: TextStyle(fontSize: 12)),
-          content: TextFormField(
-            cursorColor: Colors.blue,
-            controller: txtAccount,
-            decoration: InputDecoration(
-              hintText: 'Account',
-              enabledBorder: OutlineInputBorder(
-                  borderRadius: BorderRadius.circular(20),
-                  borderSide: BorderSide(
-                      color: Colors.black, style: BorderStyle.solid)),
-              focusedBorder: OutlineInputBorder(
-                  borderRadius: BorderRadius.circular(20),
-                  borderSide:
-                      BorderSide(color: Colors.blue, style: BorderStyle.solid)),
-            ),
-          )),
-      Step(
-          state: currentFormStep > 1 ? StepState.complete : StepState.indexed,
-          isActive: currentFormStep >= 1,
-          title: Text('Address', style: TextStyle(fontSize: 12)),
-          content: TextFormField(
-            controller: txtAddress,
-            cursorColor: Colors.blue,
-            decoration: InputDecoration(
-              hintText: 'Address',
-              enabledBorder: OutlineInputBorder(
-                  borderRadius: BorderRadius.circular(20),
-                  borderSide: BorderSide(
-                      color: Colors.black, style: BorderStyle.solid)),
-              focusedBorder: OutlineInputBorder(
-                  borderRadius: BorderRadius.circular(20),
-                  borderSide:
-                      BorderSide(color: Colors.blue, style: BorderStyle.solid)),
-            ),
-          )),
-      Step(
-          state: currentFormStep > 2 ? StepState.complete : StepState.indexed,
-          isActive: currentFormStep >= 2,
-          title: Text(
-            'Mobile Number',
-            style: TextStyle(fontSize: 12),
+        state: currentFormStep > 0 ? StepState.complete : StepState.indexed,
+        isActive: currentFormStep >= 0,
+        title: Text('Account', style: TextStyle(fontSize: 12)),
+        content: TextFormField(
+          cursorColor: Colors.blue,
+          controller: txtAccount,
+          decoration: InputDecoration(
+            hintText: 'Account',
+            enabledBorder: OutlineInputBorder(
+                borderRadius: BorderRadius.circular(20),
+                borderSide:
+                    BorderSide(color: Colors.black, style: BorderStyle.solid)),
+            focusedBorder: OutlineInputBorder(
+                borderRadius: BorderRadius.circular(20),
+                borderSide:
+                    BorderSide(color: Colors.blue, style: BorderStyle.solid)),
           ),
-          content: TextFormField(
-            controller: txtMobileNo,
-            cursorColor: Colors.blue,
-            decoration: InputDecoration(
-              hintText: 'Mobile Number',
-              enabledBorder: OutlineInputBorder(
-                  borderRadius: BorderRadius.circular(20),
-                  borderSide: BorderSide(
-                      color: Colors.black, style: BorderStyle.solid)),
-              focusedBorder: OutlineInputBorder(
-                  borderRadius: BorderRadius.circular(20),
-                  borderSide:
-                      BorderSide(color: Colors.blue, style: BorderStyle.solid)),
-            ),
-          )),
+        ),
+      ),
+      Step(
+        state: currentFormStep > 1 ? StepState.complete : StepState.indexed,
+        isActive: currentFormStep >= 1,
+        title: Text('Address', style: TextStyle(fontSize: 12)),
+        content: TextFormField(
+          controller: txtAddress,
+          cursorColor: Colors.blue,
+          decoration: InputDecoration(
+            hintText: 'Address',
+            enabledBorder: OutlineInputBorder(
+                borderRadius: BorderRadius.circular(20),
+                borderSide:
+                    BorderSide(color: Colors.black, style: BorderStyle.solid)),
+            focusedBorder: OutlineInputBorder(
+                borderRadius: BorderRadius.circular(20),
+                borderSide:
+                    BorderSide(color: Colors.blue, style: BorderStyle.solid)),
+          ),
+        ),
+      ),
+      Step(
+        state: currentFormStep > 2 ? StepState.complete : StepState.indexed,
+        isActive: currentFormStep >= 2,
+        title: Text(
+          'Mobile Number',
+          style: TextStyle(fontSize: 12),
+        ),
+        content: TextFormField(
+          controller: txtMobileNo,
+          cursorColor: Colors.blue,
+          decoration: InputDecoration(
+            hintText: 'Mobile Number',
+            enabledBorder: OutlineInputBorder(
+                borderRadius: BorderRadius.circular(20),
+                borderSide:
+                    BorderSide(color: Colors.black, style: BorderStyle.solid)),
+            focusedBorder: OutlineInputBorder(
+                borderRadius: BorderRadius.circular(20),
+                borderSide:
+                    BorderSide(color: Colors.blue, style: BorderStyle.solid)),
+          ),
+        ),
+      ),
     ];
 
 class _StepperForm1State extends State<StepperForm1> {
