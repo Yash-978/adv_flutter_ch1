@@ -6,6 +6,9 @@ import 'package:provider/provider.dart';
 import 'Screens/HomeScreen/HomeProvider/homeProvider.dart';
 import 'Screens/QuoteScreen/QuotePageView/quotePage.dart';
 import 'Utils/routes.dart';
+
+
+
 void main()
 {
   runApp(MyApp());
