@@ -6,26 +6,31 @@ import 'package:provider/provider.dart';
 import 'Screens/HomeScreen/HomeProvider/homeProvider.dart';
 import 'Screens/QuoteScreen/QuotePageView/quotePage.dart';
 import 'Utils/routes.dart';
-void main()
-{
+
+void main() {
   runApp(MyApp());
 }
+
 class MyApp extends StatelessWidget {
   const MyApp({super.key});
 
   @override
   Widget build(BuildContext context) {
     return ChangeNotifierProvider(
-      create:  (context) =>  QuoteProvider(),
-
-      child: MaterialApp(
+      create: (context) => Homeprovider(),
+      builder: (context, child) => MaterialApp(
         debugShowCheckedModeBanner: false,
         // routes: AppRoutes.routes,
-        home: QuotePage(),
+        // themeMode: Theme
+        home: Homepage(),
+        // themeMode: Provider.of<Homeprovider>(context).isLight ? ThemeMode.dark : ThemeMode.light,
+
+        // themeMode:homeproviderTrue.isLight ? ThemeMode.light:ThemeMode.dark,
         theme: ThemeData.light(),
         darkTheme: ThemeData.dark(),
-        // themeMode:homeproviderTrue.isLight ? ThemeMode.light:ThemeMode.dark,
-
+        themeMode: Provider.of<Homeprovider>(context).isLight
+            ? ThemeMode.dark
+            : ThemeMode.light,
       ),
     );
   }

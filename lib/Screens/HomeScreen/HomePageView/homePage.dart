@@ -53,7 +53,7 @@ class Homepage extends StatelessWidget {
               child: Text(
                 'Yash Jain',
                 style: TextStyle(
-                    color: Colors.black,
+                    // color: Colors.black,
                     fontWeight: FontWeight.bold,
                     fontSize: 30),
               ),
@@ -64,9 +64,11 @@ class Homepage extends StatelessWidget {
             ListTile(
               leading: Icon(
                 Icons.mode_night,
+                color: homeproviderTrue.isColor ? Colors.amber : Colors.purple,
                 size: 30,
               ),
               trailing: Switch(
+
                 value: homeproviderTrue.isLight,
                 onChanged: (value) {
                   homeproviderFalse.changeTheme();
@@ -86,25 +88,37 @@ class Homepage extends StatelessWidget {
               ),
             ),
             buildListTile(
-                leadingIcon: Icons.grid_on_rounded, leadingText: 'Story'),
+              leadingIcon: Icons.grid_on_rounded,
+              leadingText: 'Story',
+              iconColor: homeproviderTrue.isColor ? Colors.blue : Colors.green,
+            ),
             buildListTile(
-                leadingIcon: Icons.settings,
-                leadingText: 'Settings and Privacy'),
+              leadingIcon: Icons.settings,
+              leadingText: 'Settings and Privacy',
+              iconColor: homeproviderTrue.isColor ? Colors.red : Colors.blue,
+            ),
             buildListTile(
-                leadingIcon: Icons.message_outlined,
-                leadingText: 'Help Center'),
+              leadingIcon: Icons.message_outlined,
+              leadingText: 'Help Center',
+              iconColor: homeproviderTrue.isColor ? Colors.yellow : Colors.red.shade400,
+            ),
             buildListTile(
-                leadingIcon: Icons.notifications, leadingText: 'Notification'),
+              leadingIcon: Icons.notifications,
+              leadingText: 'Notification',
+              iconColor: homeproviderTrue.isColor ? Colors.amber : Colors.purple,
+            ),
           ],
         ),
       ),
     );
   }
 
-  ListTile buildListTile({required leadingIcon, required leadingText}) {
+  ListTile buildListTile(
+      {required leadingIcon, required leadingText, required iconColor}) {
     return ListTile(
       leading: Icon(
         leadingIcon,
+        color: iconColor,
         size: 30,
       ),
       title: Text(
