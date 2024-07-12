@@ -39,7 +39,10 @@ height=22% >
 <img src= "https://github.com/Yash-978/adv_flutter_ch1/assets/147479013/50a89798-6488-458e-bdca-48bb95bf85fe" width=35%
 height=22% >
 
-
+<div align = "center">
+<video src= "https://github.com/user-attachments/assets/ad906b13-f445-49dc-a824-253a66721630" width=35%
+height=22% >
+</div>
 ## 1 State Management :
 
 Ans -> State management in Dart and Flutter is all about managing the data that the app will render and how it will respond to user input.
