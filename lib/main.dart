@@ -1,8 +1,10 @@
 import 'package:adv_flutter_ch1/Screens/HomeScreen/HomePageView/homePage.dart';
+import 'package:adv_flutter_ch1/Screens/QuoteScreen/QuoteProvider/quoteProvider.dart';
 import 'package:flutter/material.dart';
 import 'package:provider/provider.dart';
 
 import 'Screens/HomeScreen/HomeProvider/homeProvider.dart';
+import 'Screens/QuoteScreen/QuotePageView/quotePage.dart';
 import 'Utils/routes.dart';
 void main()
 {
@@ -14,12 +16,12 @@ class MyApp extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return ChangeNotifierProvider(
-      create:  (context) =>  Homeprovider(),
+      create:  (context) =>  QuoteProvider(),
 
       child: MaterialApp(
         debugShowCheckedModeBanner: false,
         // routes: AppRoutes.routes,
-        home: Homepage(),
+        home: QuotePage(),
         theme: ThemeData.light(),
         darkTheme: ThemeData.dark(),
         // themeMode:homeproviderTrue.isLight ? ThemeMode.light:ThemeMode.dark,
