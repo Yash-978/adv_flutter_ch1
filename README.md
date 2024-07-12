@@ -39,7 +39,10 @@ height=22% >
 <img src= "https://github.com/Yash-978/adv_flutter_ch1/assets/147479013/50a89798-6488-458e-bdca-48bb95bf85fe" width=35%
 height=22% >
 
-
+<div align = "center">
+<video src= "https://github.com/user-attachments/assets/ad906b13-f445-49dc-a824-253a66721630" width=35%
+height=22% >
+</div>
 ## 1 State Management :
 
 Ans -> State management in Dart and Flutter is all about managing the data that the app will render and how it will respond to user input.
@@ -81,5 +84,25 @@ Ans -> The Consumer widget has two main purposes: It allows obtaining a value fr
 <div align="center">
   <img height="550"  src="https://github.com/HirenCodeMaster11/Adv_Flutter_Ch1/assets/148859956/8e9c0268-dfde-4c8b-8e9f-42794af871bc" />
 </div>
+
+<div align="center">
+  <img height="550"  src="https://github.com/user-attachments/assets/ef953dea-4346-4346-913a-acccdb2b5e08" />
+</div>
+<div align="center">
+  <img height="550"  src="https://github.com/user-attachments/assets/d34e39e9-42e7-4bdb-b733-40b9f466a467" />
+</div>
+<div align="center">
+  <img height="550"  src="https://github.com/user-attachments/assets/99d4d328-db27-460d-8e47-40d933732ff3" />
+</div>
+
+
+
+
+<div align = "center">
+<video src= "https://github.com/user-attachments/assets/c95ccf65-6cab-4921-93bb-d58ee651e486" width=35%
+height=22% >
+</div>
+
+
 
 
