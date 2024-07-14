@@ -5,10 +5,6 @@ import 'package:provider/provider.dart';
 class Homepage extends StatelessWidget {
   const Homepage({super.key});
 
-
-
-
-
   @override
   Widget build(BuildContext context) {
     double h = MediaQuery.of(context).size.height;
@@ -25,7 +21,9 @@ class Homepage extends StatelessWidget {
               mainAxisAlignment: MainAxisAlignment.spaceBetween,
               children: [
                 IconButton(
-                  onPressed: () {},
+                  onPressed: () {
+                    Navigator.of(context);
+                  },
                   icon: Icon(
                     Icons.arrow_back_ios_rounded,
                     size: 30,
@@ -72,7 +70,6 @@ class Homepage extends StatelessWidget {
                 size: 30,
               ),
               trailing: Switch(
-
                 value: homeproviderTrue.isLight,
                 onChanged: (value) {
                   homeproviderFalse.changeTheme();
@@ -104,12 +101,15 @@ class Homepage extends StatelessWidget {
             buildListTile(
               leadingIcon: Icons.message_outlined,
               leadingText: 'Help Center',
-              iconColor: homeproviderTrue.isColor ? Colors.yellow : Colors.red.shade400,
+              iconColor: homeproviderTrue.isColor
+                  ? Colors.yellow
+                  : Colors.red.shade400,
             ),
             buildListTile(
               leadingIcon: Icons.notifications,
               leadingText: 'Notification',
-              iconColor: homeproviderTrue.isColor ? Colors.amber : Colors.purple,
+              iconColor:
+                  homeproviderTrue.isColor ? Colors.amber : Colors.purple,
             ),
           ],
         ),

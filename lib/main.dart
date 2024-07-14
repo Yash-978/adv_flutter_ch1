@@ -1,14 +1,17 @@
-import 'package:adv_flutter_ch1/Screens/HomeScreen/HomePageView/homePage.dart';
-import 'package:adv_flutter_ch1/Screens/QuoteScreen/QuoteProvider/quoteProvider.dart';
+
 import 'package:flutter/material.dart';
 import 'package:provider/provider.dart';
 
 import 'Screens/HomeScreen/HomeProvider/homeProvider.dart';
-import 'Screens/QuoteScreen/QuotePageView/quotePage.dart';
+
 import 'Utils/routes.dart';
 
 void main() {
-  runApp(MyApp());
+  runApp(
+    ChangeNotifierProvider(
+        create: (context) => Homeprovider(),
+        builder: (context, child) => MyApp()),
+  );
 }
 
 class MyApp extends StatelessWidget {
@@ -16,22 +19,15 @@ class MyApp extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-    return ChangeNotifierProvider(
-      create: (context) => Homeprovider(),
-      builder: (context, child) => MaterialApp(
-        debugShowCheckedModeBanner: false,
-        // routes: AppRoutes.routes,
-        // themeMode: Theme
-        home: Homepage(),
-        // themeMode: Provider.of<Homeprovider>(context).isLight ? ThemeMode.dark : ThemeMode.light,
-
-        // themeMode:homeproviderTrue.isLight ? ThemeMode.light:ThemeMode.dark,
-        theme: ThemeData.light(),
-        darkTheme: ThemeData.dark(),
-        themeMode: Provider.of<Homeprovider>(context).isLight
-            ? ThemeMode.dark
-            : ThemeMode.light,
-      ),
+    return MaterialApp(
+      debugShowCheckedModeBanner: false,
+      routes: AppRoutes.routes,
+      // home: OnboardingPage(),
+      theme: ThemeData.light(),
+      darkTheme: ThemeData.dark(),
+      themeMode: Provider.of<Homeprovider>(context).isLight
+          ? ThemeMode.dark
+          : ThemeMode.light,
     );
   }
 }
