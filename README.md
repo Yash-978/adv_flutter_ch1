@@ -81,6 +81,9 @@ Ans -> ChangeNotifierProvider is the widget that provides an instance of a Chang
 Ans -> The Consumer widget has two main purposes: It allows obtaining a value from a provider when we don't have a BuildContext that is a descendant of said provider, and therefore cannot use Provider.
 ## 9 Provider Tree :
 
+
+<h3 align = "center"> Stepper Widget </h3>
+
 <div align="center">
   <img height="550"  src="https://github.com/HirenCodeMaster11/Adv_Flutter_Ch1/assets/148859956/8e9c0268-dfde-4c8b-8e9f-42794af871bc" />
 </div>
@@ -96,12 +99,31 @@ Ans -> The Consumer widget has two main purposes: It allows obtaining a value fr
 </div>
 
 
-
-
 <div align = "center">
 <video src= "https://github.com/user-attachments/assets/c95ccf65-6cab-4921-93bb-d58ee651e486" width=35%
 height=22% >
 </div>
+
+<h3 align = "center"> Onboarding Screen </h3>
+<div align="center">
+  <img height="550"  src="https://github.com/user-attachments/assets/523b5a61-6620-4de3-b4f7-e7977f1b67e4" />
+</div>
+
+<div align="center">
+  <img height="550"  src="https://github.com/user-attachments/assets/bff0bc96-4e24-4197-9167-e1e8ae640205" />
+</div>
+
+
+
+<div align="center">
+  <img height="550"  src="https://github.com/user-attachments/assets/9a8961b0-60a8-484e-b046-03cb5a9b5c93" />
+</div>
+
+<div align = "center">
+<video src= "https://github.com/user-attachments/assets/15b91010-4571-4360-9ca8-15a6fe633306" width=35%
+height=22% >
+</div>
+
 
 
 
