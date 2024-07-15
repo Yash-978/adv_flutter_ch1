@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+
 class Homeprovider extends ChangeNotifier
 {
   bool isLight=false;
@@ -10,5 +11,10 @@ class Homeprovider extends ChangeNotifier
 
     notifyListeners();
   }
+  // late SharedPreferences sharedPreferences;
+  // void setThemes()
+  // {
+  //   sharedPreferences = SharedPreferences.
+  // }
 
 }

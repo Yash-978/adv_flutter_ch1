@@ -325,8 +325,8 @@ class _OnboardingPageState extends State<OnboardingPage> {
                         ),
                         GestureDetector(
                           onTap: () async {
-                            final prefs = await SharedPreferences.getInstance();
-                            prefs.setBool('showHome', true);
+                            final onBoarding = await SharedPreferences.getInstance();
+                            onBoarding.setBool('showHome', true);
                             Navigator.of(context).pushReplacement(
                               MaterialPageRoute(
                                 builder: (context) => Homepage(),
