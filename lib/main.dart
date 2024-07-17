@@ -8,6 +8,7 @@ import 'Screens/HomeScreen/HomeProvider/homeProvider.dart';
 import 'Screens/OnboardingScreen/onBoardingPage.dart';
 import 'Screens/PhotoGalleryApp/photoGalleryProvider/photoGallery_provider.dart';
 import 'Screens/PhotoGalleryApp/photoGallery_View/photoGallery_View.dart';
+import 'Screens/QuoteScreen/QuoteProvider/quoteProvider.dart';
 
 Future<void> main() async {
   WidgetsFlutterBinding.ensureInitialized();
@@ -22,6 +23,9 @@ Future<void> main() async {
         ),
         ChangeNotifierProvider(
           create: (context) => PhotoGalleryProvider(),
+        ),
+        ChangeNotifierProvider(
+          create: (context) => QuoteProvider(),
         ),
 
       ],
@@ -39,11 +43,14 @@ class MyApp extends StatelessWidget {
     required this.showHome,
   }) : super(key: key);
 
+
   @override
   Widget build(BuildContext context) {
+    PhotoGalleryProvider photoGalleryProviderTrue= Provider.of<PhotoGalleryProvider>(context, listen: true);
+    PhotoGalleryProvider photoGalleryProviderFalse= Provider.of<PhotoGalleryProvider>(context, listen: false);
     return MaterialApp(
       debugShowCheckedModeBanner: false,
-      // routes: AppRoutes.routes,
+
       home: PhotoGalleryView(),
       // home: showHome ? Homepage() : OnboardingPage(),
       theme: ThemeData.light(),

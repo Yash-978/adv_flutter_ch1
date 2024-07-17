@@ -7,6 +7,7 @@ class PhotoGalleryView extends StatelessWidget {
   Widget build(BuildContext context) {
     double h = MediaQuery.of(context).size.height;
     double w = MediaQuery.of(context).size.width;
+
     return Scaffold(
       appBar: AppBar(
         leading: IconButton(
@@ -44,15 +45,19 @@ class PhotoGalleryView extends StatelessWidget {
                         fontSize: 20,
                         fontWeight: FontWeight.bold),
                   ),
-                  DropdownButton(
-                    dropdownColor: Colors.blue,
-                    items: [],
-                    onChanged: (value) {},
-                  )
+                  PopupMenuButton(
+                    initialValue: popUpMenuItems,
+                    itemBuilder: (context) => popUpMenuItems,
+
+                    onSelected: (value) {
+                      if (value == 1) {
+
+                      }
+                    },
+                  ),
                 ],
               ),
             ),
-
             SizedBox(
               height: h * 1,
               width: w * 1,
@@ -77,33 +82,20 @@ class PhotoGalleryView extends StatelessWidget {
                 },
               ),
             ),
-            // SizedBox(
-            //   height: h*0.1,
-            //   width: w*1,
-            //   child: GridView(
-            //     gridDelegate: SliverGridDelegateWithFixedCrossAxisCount(
-            //       crossAxisCount: 3,
-            //     ),
-            //     children: [
-            //       Column(
-            //         children: [
-            //           Container(
-            //             height: h * 0.2,
-            //             width: w * 0.35,
-            //             decoration: BoxDecoration(
-            //                 image: DecorationImage(
-            //               image: AssetImage('assets/images/profileImage.jpeg'),
-            //             )),
-            //           ),
-            //           Text('Camera')
-            //         ],
-            //       )
-            //     ],
-            //   ),
-            // ),
           ],
         ),
       ),
     );
   }
 }
+
+List<PopupMenuEntry> popUpMenuItems = [
+  const PopupMenuItem(
+    value: 0,
+    child: Text('Settings'),
+  ),
+  const PopupMenuItem(
+    value: 1,
+    child: Text('Show Vault'),
+  ),
+];
