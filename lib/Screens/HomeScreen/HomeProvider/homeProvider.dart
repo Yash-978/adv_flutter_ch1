@@ -18,3 +18,10 @@ class Homeprovider extends ChangeNotifier
   // }
 
 }
+
+class OpenLinks extends ChangeNotifier{
+  void launchWebsite(){
+    Uri uri= Uri.parse('https://www.behance.net/');
+    launchWebsite();
+  }
+}

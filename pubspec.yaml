@@ -38,6 +38,7 @@ dependencies:
   provider: ^6.1.2
   smooth_page_indicator: ^1.2.0
   shared_preferences: ^2.2.3
+  local_auth: ^2.2.0
 
 
 dev_dependencies:
