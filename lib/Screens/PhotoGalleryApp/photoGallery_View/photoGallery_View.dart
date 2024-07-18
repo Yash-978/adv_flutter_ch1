@@ -36,7 +36,7 @@ class PhotoGalleryView extends StatelessWidget {
                 borderRadius: BorderRadius.circular(18),
               ),
               child: Row(
-                mainAxisAlignment: MainAxisAlignment.center,
+                mainAxisAlignment: MainAxisAlignment.end,
                 children: [
                   Text(
                     'Albums',
@@ -48,9 +48,10 @@ class PhotoGalleryView extends StatelessWidget {
                   PopupMenuButton(
                     initialValue: popUpMenuItems,
                     itemBuilder: (context) => popUpMenuItems,
-
                     onSelected: (value) {
                       if (value == 1) {
+
+
 
                       }
                     },

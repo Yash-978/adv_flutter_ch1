@@ -22,32 +22,32 @@ Future<void> main() async {
           create: (context) => Homeprovider(),
         ),
         ChangeNotifierProvider(
-          create: (context) => PhotoGalleryProvider(),
+          create: (context) => GalleryProvider(),
         ),
         ChangeNotifierProvider(
           create: (context) => QuoteProvider(),
         ),
-
       ],
-      builder: (context, child) => MyApp(showHome: showHome),
+      builder: (context, child) => MyApp(),
     ),
   );
   // runApp(MyApp(showHome : showHome));
 }
 
 class MyApp extends StatelessWidget {
-  final bool showHome;
+  // final bool showHome;
 
   const MyApp({
     Key? key,
-    required this.showHome,
+    // required this.showHome,
   }) : super(key: key);
-
 
   @override
   Widget build(BuildContext context) {
-    PhotoGalleryProvider photoGalleryProviderTrue= Provider.of<PhotoGalleryProvider>(context, listen: true);
-    PhotoGalleryProvider photoGalleryProviderFalse= Provider.of<PhotoGalleryProvider>(context, listen: false);
+    GalleryProvider photoGalleryProviderTrue =
+        Provider.of<GalleryProvider>(context, listen: true);
+    GalleryProvider photoGalleryProviderFalse =
+        Provider.of<GalleryProvider>(context, listen: false);
     return MaterialApp(
       debugShowCheckedModeBanner: false,
 
