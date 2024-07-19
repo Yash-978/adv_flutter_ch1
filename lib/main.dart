@@ -31,7 +31,7 @@ Future<void> main() async {
           create: (context) => QuoteProvider(),
         ),
         ChangeNotifierProvider(
-          create: (context) => webLinkProvider(),
+          create: (context) => LauncherProvider(),
         ),
       ],
       builder: (context, child) => MyApp(),
