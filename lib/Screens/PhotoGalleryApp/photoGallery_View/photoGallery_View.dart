@@ -1,10 +1,19 @@
 import 'package:flutter/material.dart';
+import 'package:provider/provider.dart';
+
+import '../photoGalleryProvider/photoGallery_provider.dart';
+import 'VaultScreen.dart';
 
 class PhotoGalleryView extends StatelessWidget {
   const PhotoGalleryView({super.key});
 
   @override
   Widget build(BuildContext context) {
+    GalleryProvider photoGalleryProviderTrue =
+    Provider.of<GalleryProvider>(context, listen: true);
+    GalleryProvider galleryProviderFalse =
+    Provider.of<GalleryProvider>(context, listen: false);
+
     double h = MediaQuery.of(context).size.height;
     double w = MediaQuery.of(context).size.width;
 
@@ -46,16 +55,23 @@ class PhotoGalleryView extends StatelessWidget {
                         fontWeight: FontWeight.bold),
                   ),
                   PopupMenuButton(
-                    initialValue: popUpMenuItems,
                     itemBuilder: (context) => popUpMenuItems,
-                    onSelected: (value) {
+                    iconColor: Colors.black,
+                    onSelected: (value) async {
                       if (value == 1) {
-
-
-
+                        await galleryProviderFalse.authentication();
+                        if (galleryProviderFalse.didAuthenticate) {
+                          Navigator.push(
+                            context,
+                            MaterialPageRoute(
+                              builder: (context) => const VaultPage(),
+                            ),
+                          );
+                        }
                       }
                     },
                   ),
+
                 ],
               ),
             ),
