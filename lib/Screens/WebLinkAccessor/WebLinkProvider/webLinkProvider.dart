@@ -13,5 +13,17 @@ class webLinkProvider extends ChangeNotifier{
     launchUrl(uri,mode: LaunchMode.inAppBrowserView);
 
   }
+  void LaunchPhone()
+  {
+    Uri uri= Uri.parse('tel:9537721511');
+    launchUrl(uri);
+
+  }
+  // void LaunchPhone()
+  // {
+  //   Uri uri= Uri.parse('tel:9537721511');
+  //   launchUrl(uri);
+  //
+  // }
 
 }
