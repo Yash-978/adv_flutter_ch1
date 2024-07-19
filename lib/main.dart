@@ -53,7 +53,8 @@ class MyApp extends StatelessWidget {
     return MaterialApp(
       debugShowCheckedModeBanner: false,
 
-      home: WebLinkViewPage(),
+      // home: PhotoGalleryView(),
+      home: PhotoGalleryView(),
       // home: showHome ? Homepage() : OnboardingPage(),
       theme: ThemeData.light(),
       darkTheme: ThemeData.dark(),
