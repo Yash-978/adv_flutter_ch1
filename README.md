@@ -143,8 +143,16 @@ height=22% >
 <div align = "center">
 <video src= "https://github.com/user-attachments/assets/ae8d9027-e65b-48ca-a9cf-4f12c97ba23d" width=35%
 height=22% >
+</div>
+
+<h3 align = "center"> 1.6 Contact Us Page With Interaction
+
+<div align="center">
+  <img height="550"  src="https://github.com/user-attachments/assets/ebc4405c-a8d4-4f0a-a86c-9cc85e7a9cb3" />
+</div>
 
 
-
-
+<div align = "center">
+<video src= "https://github.com/user-attachments/assets/6a69cbb0-af25-4236-ba9e-65af12098cc6" width=35%
+height=22% >
 </div>
