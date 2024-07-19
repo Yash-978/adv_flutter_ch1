@@ -125,6 +125,21 @@ height=22% >
 </div>
 
 
+<h3 align = "center"> 1.7 Photo Gallery With Biometric Authentication
+ </h3>
+
+
+<div align="center">
+  <img height="550"  src="https://github.com/user-attachments/assets/b1ccc0d5-8190-4bc3-97cf-96384a61f460" />
+</div>
+<div align="center">
+  <img height="550"  src="https://github.com/user-attachments/assets/1d9f535d-c159-4c40-8369-b7c0f25775ff" />
+</div>
+<div align = "center">
+<video src= "https://github.com/user-attachments/assets/ae8d9027-e65b-48ca-a9cf-4f12c97ba23d" width=35%
+height=22% >
 
 
 
+
+</div>
