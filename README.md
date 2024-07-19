@@ -34,6 +34,7 @@ height=22% >
 <p align = "center">
 <img src= "https://github.com/Yash-978/adv_flutter_ch1/assets/147479013/4f603b8d-a938-4bfc-b2f0-0df3b395bf1a" width=35%
 height=22% >
+
 ## Description
 
 Flutter Stepper widget! This widget provides a smooth, guided experience for multi-step forms, allowing users to navigate through each step with ease. Perfect for any app requiring structured data input, the Stepper widget enhances user experience with its intuitive design and seamless functionality.
